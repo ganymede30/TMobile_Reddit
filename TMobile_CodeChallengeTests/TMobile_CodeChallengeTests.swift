@@ -2,32 +2,44 @@
 //  TMobile_CodeChallengeTests.swift
 //  TMobile_CodeChallengeTests
 //
-//  Created by Michael Kenny on 3/17/21.
+//  Created by MKenny on 3/17/21.
 //
 
 import XCTest
 @testable import TMobile_CodeChallenge
 
-class TMobile_CodeChallengeTests: XCTestCase {
+class TMobileCodeChallengeTests: XCTestCase {
 
+    var sut: Feed?
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        let testBundle = Bundle(for: type(of: self))
+        if let path = testBundle.path(forResource: "mockData", ofType: "json") {
+            if let jsonData = try? Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped) {
+                let decoder = JSONDecoder()
+                let postResponse = try? decoder.decode(Feed.self, from: jsonData)
+                sut = postResponse
+            }
         }
     }
 
+    override func tearDownWithError() throws {
+        sut = nil
+        super.tearDown()
+    }
+    
+    func test_DecodePostModelFromMockData() {
+        guard let sut = sut else { return }
+        let postsArray = sut.data.children
+        XCTAssertEqual(postsArray.count, 1, "Posts array should contain 1 entry")
+        
+    }
+
+    
+    func test_PostArrayContainsPostWithTitle() {
+        guard let sut = sut else { return }
+        let postTitle = sut.data.children[0].data.title
+        XCTAssertEqual(postTitle, "StoreKit Testing Improvements in iOS 14")
+    }
+    
 }

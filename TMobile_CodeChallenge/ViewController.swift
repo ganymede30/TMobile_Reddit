@@ -1,19 +1,39 @@
 //
-//  ViewController.swift
+//  FeedViewController.swift
 //  TMobile_CodeChallenge
 //
-//  Created by Michael Kenny on 3/17/21.
+//  Created by MKenny on 3/17/21.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class FeedViewController: UITableViewController {
+    
+    var postViewModel = [PostViewModel]() {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableView.register(PostTableViewCell.self, forCellReuseIdentifier: PostTableViewCell.identifier)
+        PostViewModel.fetchFeed(viewModel: &postViewModel)
+        self.tableView.estimatedRowHeight = 200
+        self.tableView.rowHeight = UITableView.automaticDimension
     }
-
-
+    
 }
 
+/*
+ http://www.reddit.com/.json
+ http://www.reddit.com/.json?after= + afterLink
+ 
+ - image
+ - title
+ - comment number
+ - score.api
+ 
+ */

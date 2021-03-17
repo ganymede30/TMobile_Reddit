@@ -10,12 +10,22 @@
 		8197D48726025F710019699E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D48626025F710019699E /* AppDelegate.swift */; };
 		8197D48926025F710019699E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D48826025F710019699E /* SceneDelegate.swift */; };
 		8197D48B26025F710019699E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D48A26025F710019699E /* ViewController.swift */; };
-		8197D48E26025F710019699E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8197D48C26025F710019699E /* Main.storyboard */; };
-		8197D49126025F710019699E /* TMobile_CodeChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8197D48F26025F710019699E /* TMobile_CodeChallenge.xcdatamodeld */; };
 		8197D49326025F7C0019699E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8197D49226025F7C0019699E /* Assets.xcassets */; };
-		8197D49626025F7C0019699E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8197D49426025F7C0019699E /* LaunchScreen.storyboard */; };
 		8197D4A126025F7D0019699E /* TMobile_CodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4A026025F7D0019699E /* TMobile_CodeChallengeTests.swift */; };
 		8197D4AC26025F7D0019699E /* TMobile_CodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4AB26025F7D0019699E /* TMobile_CodeChallengeUITests.swift */; };
+		8197D4BE26025FFB0019699E /* NSLayoutDimension+constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4BD26025FFB0019699E /* NSLayoutDimension+constraint.swift */; };
+		8197D4C62602602A0019699E /* NSLayoutAnchor+constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4C52602602A0019699E /* NSLayoutAnchor+constraint.swift */; };
+		8197D4CB260260400019699E /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4CA260260400019699E /* UIView+extensions.swift */; };
+		8197D4D0260260510019699E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4CF260260510019699E /* Constants.swift */; };
+		8197D4D6260260C10019699E /* FeedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4D5260260C10019699E /* FeedRequest.swift */; };
+		8197D4DB260260CD0019699E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4DA260260CD0019699E /* ImageCache.swift */; };
+		8197D4ED2602617A0019699E /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4EC2602617A0019699E /* PostViewModel.swift */; };
+		8197D4F32602619E0019699E /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4F22602619E0019699E /* Posts.swift */; };
+		8197D4FC260261F30019699E /* ViewController+Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D4FB260261F30019699E /* ViewController+Delegates.swift */; };
+		8197D50D260262580019699E /* PostViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D50C260262580019699E /* PostViewTable.swift */; };
+		8197D518260267F10019699E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8197D517260267F00019699E /* Main.storyboard */; };
+		8197D51D26026A630019699E /* PostRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8197D51C26026A630019699E /* PostRequestTests.swift */; };
+		8197D52226026AA50019699E /* mockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8197D52126026AA50019699E /* mockData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +50,7 @@
 		8197D48626025F710019699E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8197D48826025F710019699E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8197D48A26025F710019699E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8197D48D26025F710019699E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8197D49026025F710019699E /* TMobile_CodeChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TMobile_CodeChallenge.xcdatamodel; sourceTree = "<group>"; };
 		8197D49226025F7C0019699E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8197D49526025F7C0019699E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8197D49726025F7C0019699E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8197D49C26025F7D0019699E /* TMobile_CodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMobile_CodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8197D4A026025F7D0019699E /* TMobile_CodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMobile_CodeChallengeTests.swift; sourceTree = "<group>"; };
@@ -51,6 +58,19 @@
 		8197D4A726025F7D0019699E /* TMobile_CodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMobile_CodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8197D4AB26025F7D0019699E /* TMobile_CodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMobile_CodeChallengeUITests.swift; sourceTree = "<group>"; };
 		8197D4AD26025F7D0019699E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8197D4BD26025FFB0019699E /* NSLayoutDimension+constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutDimension+constraint.swift"; sourceTree = "<group>"; };
+		8197D4C52602602A0019699E /* NSLayoutAnchor+constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutAnchor+constraint.swift"; sourceTree = "<group>"; };
+		8197D4CA260260400019699E /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		8197D4CF260260510019699E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8197D4D5260260C10019699E /* FeedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRequest.swift; sourceTree = "<group>"; };
+		8197D4DA260260CD0019699E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		8197D4EC2602617A0019699E /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		8197D4F22602619E0019699E /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		8197D4FB260261F30019699E /* ViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Delegates.swift"; sourceTree = "<group>"; };
+		8197D50C260262580019699E /* PostViewTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewTable.swift; sourceTree = "<group>"; };
+		8197D517260267F00019699E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8197D51C26026A630019699E /* PostRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRequestTests.swift; sourceTree = "<group>"; };
+		8197D52126026AA50019699E /* mockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +121,15 @@
 		8197D48526025F710019699E /* TMobile_CodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				8197D48626025F710019699E /* AppDelegate.swift */,
-				8197D48826025F710019699E /* SceneDelegate.swift */,
-				8197D48A26025F710019699E /* ViewController.swift */,
-				8197D48C26025F710019699E /* Main.storyboard */,
-				8197D49226025F7C0019699E /* Assets.xcassets */,
-				8197D49426025F7C0019699E /* LaunchScreen.storyboard */,
+				8197D5032602621F0019699E /* View */,
+				8197D4FA260261CE0019699E /* Controller */,
+				8197D4F12602618F0019699E /* Model */,
+				8197D4EB260261650019699E /* ViewModel */,
+				8197D4DF2602610B0019699E /* Supporting */,
+				8197D4D4260260AE0019699E /* Networking */,
+				8197D4BC26025FC60019699E /* Extensions */,
 				8197D49726025F7C0019699E /* Info.plist */,
-				8197D48F26025F710019699E /* TMobile_CodeChallenge.xcdatamodeld */,
+				8197D517260267F00019699E /* Main.storyboard */,
 			);
 			path = TMobile_CodeChallenge;
 			sourceTree = "<group>";
@@ -118,6 +139,8 @@
 			children = (
 				8197D4A026025F7D0019699E /* TMobile_CodeChallengeTests.swift */,
 				8197D4A226025F7D0019699E /* Info.plist */,
+				8197D51C26026A630019699E /* PostRequestTests.swift */,
+				8197D52126026AA50019699E /* mockData.json */,
 			);
 			path = TMobile_CodeChallengeTests;
 			sourceTree = "<group>";
@@ -129,6 +152,69 @@
 				8197D4AD26025F7D0019699E /* Info.plist */,
 			);
 			path = TMobile_CodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		8197D4BC26025FC60019699E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8197D4BD26025FFB0019699E /* NSLayoutDimension+constraint.swift */,
+				8197D4C52602602A0019699E /* NSLayoutAnchor+constraint.swift */,
+				8197D4CA260260400019699E /* UIView+extensions.swift */,
+				8197D4CF260260510019699E /* Constants.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8197D4D4260260AE0019699E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8197D4D5260260C10019699E /* FeedRequest.swift */,
+				8197D4DA260260CD0019699E /* ImageCache.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8197D4DF2602610B0019699E /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				8197D48626025F710019699E /* AppDelegate.swift */,
+				8197D48826025F710019699E /* SceneDelegate.swift */,
+				8197D49226025F7C0019699E /* Assets.xcassets */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		8197D4EB260261650019699E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8197D4EC2602617A0019699E /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8197D4F12602618F0019699E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8197D4F22602619E0019699E /* Posts.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8197D4FA260261CE0019699E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8197D48A26025F710019699E /* ViewController.swift */,
+				8197D4FB260261F30019699E /* ViewController+Delegates.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8197D5032602621F0019699E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8197D50C260262580019699E /* PostViewTable.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8197D49626025F7C0019699E /* LaunchScreen.storyboard in Resources */,
 				8197D49326025F7C0019699E /* Assets.xcassets in Resources */,
-				8197D48E26025F710019699E /* Main.storyboard in Resources */,
+				8197D518260267F10019699E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8197D52226026AA50019699E /* mockData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +347,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8197D4DB260260CD0019699E /* ImageCache.swift in Sources */,
+				8197D4CB260260400019699E /* UIView+extensions.swift in Sources */,
 				8197D48B26025F710019699E /* ViewController.swift in Sources */,
+				8197D4FC260261F30019699E /* ViewController+Delegates.swift in Sources */,
+				8197D4BE26025FFB0019699E /* NSLayoutDimension+constraint.swift in Sources */,
+				8197D50D260262580019699E /* PostViewTable.swift in Sources */,
+				8197D4C62602602A0019699E /* NSLayoutAnchor+constraint.swift in Sources */,
 				8197D48726025F710019699E /* AppDelegate.swift in Sources */,
 				8197D48926025F710019699E /* SceneDelegate.swift in Sources */,
-				8197D49126025F710019699E /* TMobile_CodeChallenge.xcdatamodeld in Sources */,
+				8197D4F32602619E0019699E /* Posts.swift in Sources */,
+				8197D4ED2602617A0019699E /* PostViewModel.swift in Sources */,
+				8197D4D0260260510019699E /* Constants.swift in Sources */,
+				8197D4D6260260C10019699E /* FeedRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8197D4A126025F7D0019699E /* TMobile_CodeChallengeTests.swift in Sources */,
+				8197D51D26026A630019699E /* PostRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,25 +394,6 @@
 			targetProxy = 8197D4A826025F7D0019699E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8197D48C26025F710019699E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8197D48D26025F710019699E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8197D49426025F7C0019699E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8197D49526025F7C0019699E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8197D4AE26025F7D0019699E /* Debug */ = {
@@ -597,19 +674,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8197D48F26025F710019699E /* TMobile_CodeChallenge.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8197D49026025F710019699E /* TMobile_CodeChallenge.xcdatamodel */,
-			);
-			currentVersion = 8197D49026025F710019699E /* TMobile_CodeChallenge.xcdatamodel */;
-			path = TMobile_CodeChallenge.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8197D47B26025F710019699E /* Project object */;
 }

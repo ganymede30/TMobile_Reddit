@@ -1,13 +1,13 @@
 //
-//  TMobile_CodeChallengeUITests.swift
-//  TMobile_CodeChallengeUITests
+//  TMobileCode_ChallengeUITests.swift
+//  TMobileCode_ChallengeUITests
 //
-//  Created by Michael Kenny on 3/17/21.
+//  Created by MKenny on 3/17/21.
 //
 
 import XCTest
 
-class TMobile_CodeChallengeUITests: XCTestCase {
+class TMobileCodeChallengeUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
